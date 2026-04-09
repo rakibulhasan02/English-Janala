@@ -24,9 +24,11 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="container mx-auto w-11/12 navbar bg-blue-100 shadow-sm">
+    <header class="bg-blue-100 shadow-sm">
         
-  <div class="navbar-start">
+
+        <div class="navbar w-11/12 mx-auto">
+<div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -54,6 +56,9 @@
   </div>
  
 
+
+        </div>
+  
     </header>
 
     <section class="container w-11/12 mx-auto mt-10 flex justify-between items-center flex-col-reverse lg:flex-row gap-10 text-center lg:text-left">
@@ -97,7 +102,7 @@
     </section>
 
 
-    <section id="word-container" class="container mx-auto bg-gray-100 p-10 w-11/12  my-10 grid grid-cols-3 gap-3  ">
+    <section id="word-container" class="container mx-auto bg-gray-100 p-10 w-11/12  my-10 grid grid-cols-1 md:grid-cols-3 gap-3  ">
 
         <!-- <div class="card bg-white p-5 rounded-lg text-center space-y-2">
             <h2 class="font-bold text-xl">Eager</h2>
@@ -108,24 +113,52 @@
                 <button class="btn "><i class="fa-solid fa-volume-high"></i></button>
               
             </div>
-        </div>
-        <div class="card bg-white p-5 rounded-lg">
-            <h2 class="font-bold text-xl">Eager</h2>
-            <p>Meaning /Pronounciation</p>
-            <div>"আগ্রহী / ইগার"</div>
-            <div class="flex justify-between">
-                <i class="fa-solid fa-exclamation"></i>
-                <i class="fa-solid fa-volume-high"></i>
-              
-            </div>
-        </div>
-        <div class="card bg-white p-5 rounded-lg">
-            <h2>Eager</h2>
-            <p>Meaning /Pronounciation</p>
-            <div>"আগ্রহী / ইগার"</div>
+        
         </div> -->
+        <div class="text-center col-span-full font-bangla space-y-4 text-wrap">
+        <p class="text-opacity-40">আপনি এখনো কোন Lesson Select করেন নি</p>
+        <h2 class="text-4xl font-bold text-opacity-20">একটি Lesson Select করুন।</h2>
+    </div>
     </section>
 
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+     <!-- modal card -->
+     <div class="border border-blue-300  space-y-4 rounded-md">
+        <h2 class="text-4xl">Eager</h2>
+    <div>     
+    <h3>Meaning</h3>
+     <p>আগ্রহী</p>
+    </div>
+       
+     <div>
+        <h2>Example</h2>
+        <p>The kids were eager to open their gifts</p>
+     </div>
+      <h2>সমার্থক শব্দ গুলো</h2>
+     <div class="flex justify-start gap-3">
+        <p class=" p-3 rounded-sm bg-[#D7E4EF]">Enthusiastic</p>
+        <p class=" p-3 rounded-sm bg-[#D7E4EF]">excited</p>
+        <p class=" p-3 rounded-sm bg-[#D7E4EF]">keen</p>
+     </div>
+     
+     </div>
+    <!-- <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p> -->
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-primary">Complete Learning</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+  
+  
+    
+    
     <script src="./script/index.js"></script>
 </body>
 </html>
